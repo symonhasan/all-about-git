@@ -16,7 +16,7 @@ git --version
 ```
 You may now see your installed Git version.
 ![git version check](snapshot/0.png)
-<p align="center">*Fig 1 - outcome of `git --version` command*</p>
+<p align="center"><em>Fig 1 - outcome of git --version command</em></p>
 
 ### Git Global Config
 
@@ -38,9 +38,9 @@ git config --list
 ** Snapshots are given below **
 
 ![git global config](snapshot/2.png)
-<p align="center">*Fig 2 - setting config variable*</p>
+<p align="center"><em>Fig 2 - setting config variable</em></p>
 ![git global config list](snapshot/3.png)
-<p align="center">*Fig 3 - outcome of `git config --list` command*</p>
+<p align="center"><em>Fig 3 - outcome of git config --list command</em></p>
 
 ### Need Help?
 
@@ -56,7 +56,7 @@ git <keyword> --help
 
 ** Snapshots **
 ![git global config](snapshot/2_0.png)
-<p align="center">*Fig 4 - fetching help for config keyword*</p>
+<p align="center"><em>Fig 4 - fetching help for config keyword</em></p>
 
 ![git global config list](snapshot/2_1.png)
-<p align="center">*Fig 5 - outcome of `git config --help` command*</p>
+<p align="center"><em>Fig 5 - outcome of git config --help command</em></p>

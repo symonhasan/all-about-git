@@ -15,7 +15,7 @@ After sucessfully installing Git to your machine you can now check version by ty
 git --version
 ```
 You may now see your installed Git version.
-![git version check](snapshot/0.png)
+![git version check](snapshot/0.PNG)
 <p align="center"><em>Fig 1 - outcome of git --version command</em></p>
 
 ### Git Global Config
@@ -37,9 +37,9 @@ git config --list
 
 ** Snapshots are given below **
 
-![git global config](snapshot/2.png)
+![git global config](snapshot/2.PNG)
 <p align="center"><em>Fig 2 - setting config variable</em></p>
-![git global config list](snapshot/3.png)
+![git global config list](snapshot/3.PNG)
 <p align="center"><em>Fig 3 - outcome of git config --list command</em></p>
 
 ### Need Help?
@@ -55,10 +55,10 @@ git <keyword> --help
 ```
 
 ** Snapshots **
-![git fetching help](snapshot/2_0.png)
+![git fetching help](snapshot/2_0.PNG)
 <p align="center"><em>Fig 4 - fetching help for config keyword</em></p>
 
-![git config help command](snapshot/2_1.png)
+![git config help command](snapshot/2_1.PNG)
 <p align="center"><em>Fig 5 - outcome of git config --help command</em></p>
 
 ## Setting Up Local Repository
@@ -67,7 +67,7 @@ git <keyword> --help
 
 Let's say we have a project or we have a directory for project which we want to track with git in our local machine. To do so first we need to go to that project directory. In my case my project folder is currently empty as you can see in Fig .
 
-![remote url of new repository](snapshot/4.png)
+![remote url of new repository](snapshot/4.PNG)
 <p align="center"><em>Fig - empty project folder</em></p>
 
 Now to track this folder with git in our git bash we need to type the following command 
@@ -76,12 +76,12 @@ git init
 ```
 This command will create a .git folder in your current working directory which stores all information about your project.
 
-![remote url of new repository](snapshot/5.png)
+![remote url of new repository](snapshot/5.PNG)
 <p align="center"><em>Fig - initializing git</em></p>
 
 To stop tracking your project with git just remove the .git folder from project directory. Your project will no longer be tracked with git. This will also remove all branches and commit you changed in your project if the project do not exist in remote repository.
 
-![remote url of new repository](snapshot/6.png)
+![remote url of new repository](snapshot/6.PNG)
 <p align="center"><em>Fig - removing .git folder</em></p>
 
 [ Optional ] If you need to initialize your local repository with README or gitignore file you can do this with following command.
@@ -89,8 +89,8 @@ To stop tracking your project with git just remove the .git folder from project 
 touch README.md
 touch .gitignore
 ```
-![remote url of new repository](snapshot/7_1.png)
-![remote url of new repository](snapshot/7_2.png)
+![remote url of new repository](snapshot/7_1.PNG)
+![remote url of new repository](snapshot/7_2.PNG)
 <p align="center"><em>Fig - adding README and gitignore file to project folder</em></p>
 
 ### Checking Git Status
@@ -105,7 +105,7 @@ git status
 
 Now in our project if we now run this command we will see this 
 
-![git status](snapshot/8.png)
+![git status](snapshot/8.PNG)
 <p align="center"><em>Fig - current status of local repo</em></p>
 
 ### Add files to staging area
@@ -116,7 +116,7 @@ git add -A
 ```
 This command will add all the current untracked files in staging area. In Fig the file colored in green is currently in staging area and ready to be commited. 
 
-![git add all](snapshot/11.png)
+![git add all](snapshot/11.PNG)
 <p align="center"><em>Fig - add all files to satge area</em></p>
 
 To remove all file from staging area we can simply type 
@@ -126,26 +126,26 @@ git reset
 ```
 
 This will remove all file from from staging area.
-![git reset all](snapshot/10.png)
+![git reset all](snapshot/10.PNG)
 <p align="center"><em>Fig - remove all files from stage area</em></p>
 
 To add a sepcific file we can type 
 ```
 git add <filename>
 ```
-![git add specific file to stage area](snapshot/9.png)
+![git add specific file to stage area](snapshot/9.PNG)
 <p align="center"><em>Fig - add specific file to stage area</em></p> 
 
 To remove a specific file from stage area 
 ```
 git reset <filename>
 ```
-![git reset filename](snapshot/12.png)
+![git reset filename](snapshot/12.PNG)
 <p align="center"><em>Fig - git reset specific file</em></p>
 
 Now for our project let's add all file to stage area.
 
-![all files to stage area](snapshot/11.png)
+![all files to stage area](snapshot/11.PNG)
 <p align="center"><em>Fig - all files to stage area</em></p>
 
 ### Commit Changes
@@ -159,15 +159,15 @@ After adding files in staging area now we can make changes to our repository by 
 git commit -m "your massage"
 ```
 
-![remote url of new repository](snapshot/14.png)
+![remote url of new repository](snapshot/14.PNG)
 <p align="center"><em>Fig - commit changes</em></p>
 
 We can also see all our commits using the following command. It will list all our commits we made in our repository till now.
 ```
 git log
 ```
-![git log](snapshot/13_0.png)
-![git log](snapshot/13.png)
+![git log](snapshot/13_0.PNG)
+![git log](snapshot/13.PNG)
 <p align="center"><em>Fig - git log</em></p>
 
 ## Add Local Repository To Remote Repository
@@ -178,7 +178,7 @@ git log
 
 - After creating new repository you may see a page with a remote repository url. In my case the url is shown in Fig . Copy this url
 
-![remote url of new repository](snapshot/18.png)
+![remote url of new repository](snapshot/18.PNG)
 <p align="center"><em>Fig - remote url of new repository</em></p>
 
 - Open Git Bash
@@ -191,12 +191,12 @@ git remote add origin < remote repository URL >
 git remote -v
 git push origin master
 ```
-![transfer local repo to remote](snapshot/19.png)
+![transfer local repo to remote](snapshot/19.PNG)
 <p align="center"><em>Fig - adding local repo to remote repo</em></p>
 
 - Refresh your github repository page and you will see all your files and commits you made in your local repository is now available in your remote repository. 
 
-![github page refresh](snapshot/20.png)
+![github page refresh](snapshot/20.PNG)
 <p align="center"><em>Fig - github page after adding local repo</em></p>
 
 ## Clone Remote Repository
@@ -222,7 +222,7 @@ To push changes we made in our local repository to remote repository we need to 
 - Add your changed files to staging area
 - Commit our changes
 
-![git commit change](snapshot/23.png)
+![git commit change](snapshot/23.PNG)
 <p align="center"><em>Fig - commit change</em></p>
 
 - Pull the changes other developers have made so far. Now this is important when two or more developer is working on a project so that before making any changes to remote repository from your side you are updated with what changes other developers have made till now. Pulling the changes can be done with the follwing command
@@ -230,7 +230,7 @@ To push changes we made in our local repository to remote repository we need to 
 git pull origin master
 ```
 
-![git pull changes](snapshot/24.png)
+![git pull changes](snapshot/24.PNG)
 <p align="center"><em>Fig - pull changes to master branch</em></p>
 
 - Now push your changes using following command. Pushing is important so that other developer may fetch what changes are made from your side.
@@ -238,7 +238,7 @@ git pull origin master
 git push origin master
 ```
 
-![git push change](snapshot/25.png)
+![git push change](snapshot/25.PNG)
 <p align="center"><em>Fig - push changes in master branch</em></p>
 Here `origin` is your repository and `master` is the branch where you are pushing the changes. Though it's not best practice to direcly push changes to master branch.
 

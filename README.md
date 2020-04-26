@@ -3,7 +3,10 @@
 </p>
 
 <p align="center">
-    <h2 align="center">Table Of Content</h2>
+    <h2 align="center">All About Git</h2>
+</p>
+<p align="left">
+    <h3>Table Of Content</h3>
 </p>
 
 - [Getting Started](#getting-started)

@@ -254,5 +254,116 @@ As I mentioned in previous section that it's okay but not best practice to direc
 
 Now this help to unit test individual feature of a project before merging them to master branch.
 
-### Create New Branch
+### Create a new branch
 
+To list all the branch in your local and remote repository just simply type 
+```bash
+$   git branch -a
+```
+In our case our local and remote repository have only one master branch.
+
+![git branch -a](snapshot/27.PNG)
+![git branch list](snapshot/26.PNG)
+
+[ N.B. Here text in red color indicates the branch that are present in remote repository and others are branch present in local repository. ]
+
+Now lets see current status of our remote repository in the figure below
+
+![git push change](snapshot/31.PNG)
+
+As you can see currently we have only one remote branch which is master branch. And the repository contains one folder and two files. Now lets create a new branch for our further activities. To create a new branch we can simply type the following command in our git bash.
+```bash
+$   git branch <branch name>
+```
+Now if we list our all branches using `git branch -a` we will see a new branch in our list.
+
+![git branch create](snapshot/29.PNG)
+![git branch list](snapshot/28.PNG)
+
+To head to a new branch simply type the folowing command
+
+```bash
+$   git checkout <branch name>
+```
+
+![git checkout](snapshot/30.PNG)
+
+### Commit to new branch 
+
+Now let's create a new text file named test and commit it in our newly created branch.
+
+![git create file](snapshot/32.PNG)
+
+### Push Branch
+
+To push our new branch to remote repository type
+
+```bash
+$   git push -u origin <branch name>
+```
+
+![git push new branch](snapshot/33.PNG)
+
+Now if we see to our remote repository we will see our newly created branch have been pushed. But the file test.txt is not added as the branch is not yet marged with master branch.
+
+![remote repo](snapshot/34.PNG)
+
+### Marge a branch
+
+To merge a branch we need to follow some steps ,
+
+* Checkout to master branch
+```bash
+$   git checkout master
+```
+* Pull the changes other developers made.
+```bash
+$   git pull origin master
+```
+
+![git checkout master](snapshot/36.PNG)
+
+*  View which branches are merged till now.
+```bash
+$   git branch --merged
+```
+
+![git checkout master](snapshot/35.PNG)
+* Merge branch with master
+```bash
+$   git marge <branch name>
+```
+![git checkout master](snapshot/38.PNG)
+
+* Push the changes in marged branch to master.
+```bash
+$   git push origin master
+```
+![git checkout master](snapshot/40.PNG)
+
+Now if we go to our remote repository we will see our changes from test branch have been added to our master branch as we marged it.
+
+![git checkout master](snapshot/41.PNG)
+
+### Delete a branch
+
+Now as we have marged our test branch with master branch we can now delete our branch.
+
+* First check wheather the branch is marged with master or not using `git branch --merged`
+
+![git checkout master](snapshot/39.PNG)
+
+* Now delete the branch from local repository
+```bash
+$   git branch -d <branch name>
+```
+* Delete the branch from remote repository
+```bash
+$   git push origin --delete <branch name>
+```
+
+![git checkout master](snapshot/44.PNG)
+
+Now if we see our remote repository we will see our test branch have been deleted from our repository. 
+
+![git checkout master](snapshot/43.PNG)

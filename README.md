@@ -16,11 +16,11 @@ $   git --version
 ```
 You may now see your installed Git version.
 ![git version check](snapshot/0.PNG)
-<p align="center"><em>Fig 1 - outcome of git --version command</em></p>
+<p align="center"><em>Fig - git --version</em></p>
 
 ### Git Global Config
 
-Now once you have sucessfully installed git now you need to set up some global configuration variable. Now these variables are important because if you working with other developers then they need to know who is making which changes and many other things. Now there are two important variable. One is `user.name` and another one is `user.email`. Of course there are lot more than these two but as we are getting started as beginner these two are enough for us.
+Once you have sucessfully installed git now you need to set up some global configuration variable. Now these variables are important because if you are working with other developers then they need to know who is making which changes and many other things. Now there are two important variable. One is `user.name` and another one is `user.email`. Of course there are lot more than these two but as we are getting started as beginner these two are enough for us.
 
 - To set your username
 ```bash
@@ -38,10 +38,10 @@ $   git config --list
 Snapshots are given below
 
 ![git global config](snapshot/2.PNG)
-<p align="center"><em>Fig 2 - setting config variable</em></p>
+<p align="center"><em>Fig - setting config variable</em></p>
 
 ![git global config list](snapshot/3.PNG)
-<p align="center"><em>Fig 3 - outcome of git config --list command</em></p>
+<p align="center"><em>Fig - git config --list</em></p>
 
 ### Need Help?
 
@@ -57,10 +57,8 @@ $   git <keyword> --help
 
  Snapshots 
 ![git fetching help](snapshot/2_0.PNG)
-<p align="center"><em>Fig 4 - fetching help for config keyword</em></p>
-
 ![git config help command](snapshot/2_1.PNG)
-<p align="center"><em>Fig 5 - outcome of git config --help command</em></p>
+<p align="center"><em>Fig - git config --help</em></p>
 
 ## Setting Up Local Repository
 
@@ -68,37 +66,37 @@ $   git <keyword> --help
 
 Let's say we have a project or we have a directory for project which we want to track with git in our local machine. To do so first we need to go to that project directory. In my case my project folder is currently empty as you can see in Fig .
 
-![remote url of new repository](snapshot/4.PNG)
+![empty project folder](snapshot/4.PNG)
 <p align="center"><em>Fig - empty project folder</em></p>
 
 Now to track this folder with git in our git bash we need to type the following command 
 ```bash
 $   git init
 ```
-This command will create a .git folder in your current working directory which stores all information about your project.
+This command will create a .git folder in our current working directory which stores all information about our project.
 
-![remote url of new repository](snapshot/5.PNG)
+![initialize git](snapshot/5.PNG)
 <p align="center"><em>Fig - initializing git</em></p>
 
-To stop tracking your project with git just remove the .git folder from project directory. Your project will no longer be tracked with git. This will also remove all branches and commit you changed in your project if the project do not exist in remote repository.
+To stop tracking our project with git we need to remove the .git folder from project directory. Our project will no longer be tracked with git. This will also remove all branches and commit we have made in our project if the project do not exist in remote repository.
 
-![remote url of new repository](snapshot/6.PNG)
+![remove .git folder](snapshot/6.PNG)
 <p align="center"><em>Fig - removing .git folder</em></p>
 
-[ Optional ] If you need to initialize your local repository with README or gitignore file you can do this with following command.
+[ Optional ] If we need to initialize our local repository with README or gitignore file we can do this with following command.
 ```bash
 $   touch README.md
 $   touch .gitignore
 ```
-![remote url of new repository](snapshot/7_1.PNG)
-![remote url of new repository](snapshot/7_2.PNG)
+![add README](snapshot/7_1.PNG)
+![add gitignore](snapshot/7_2.PNG)
 <p align="center"><em>Fig - adding README and gitignore file to project folder</em></p>
 
 ### Checking Git Status
 
-Before dive deeper into things there are basically three area. The first area is our working directory where we make changes to our files , projects etc. The second area is called staging area where we organize our files which we want to commit. And the last area is .git directory or repository where all the comiited changes are saved.
+Before dive deeper into things there are basically three area while tracking a project with git. The first area is our working directory where we make changes to our files , projects etc. The second area is called staging area where we organize our files which we want to commit. And the last area is .git directory or repository where all the comiited changes are saved.
 
-Now this all status can be checked using the following command in our git bash
+Now current status of our local repository can be checked using the following command
 
 ```bash
 $   git status
@@ -115,12 +113,12 @@ Now this red color file are untracked file or the file we have made changes in o
 ```bash
 $   git add -A
 ```
-This command will add all the current untracked files in staging area. In Fig the file colored in green is currently in staging area and ready to be commited. 
+This command will add all the current untracked files in staging area. In Fig the files colored in green are currently in staging area and are ready to be commited. 
 
 ![git add all](snapshot/11.PNG)
 <p align="center"><em>Fig - add all files to satge area</em></p>
 
-To remove all file from staging area we can simply type 
+To remove all files from staging area we can simply type 
 
 ```bash
 $   git reset
@@ -130,28 +128,28 @@ This will remove all file from from staging area.
 ![git reset all](snapshot/10.PNG)
 <p align="center"><em>Fig - remove all files from stage area</em></p>
 
-To add a sepcific file we can type 
+To add a sepcific file to staging area we can type 
 ```bash
 $   git add <filename>
 ```
 ![git add specific file to stage area](snapshot/9.PNG)
 <p align="center"><em>Fig - add specific file to stage area</em></p> 
 
-To remove a specific file from stage area 
+To remove a specific file from staging area 
 ```bash
 $   git reset <filename>
 ```
 ![git reset filename](snapshot/12.PNG)
 <p align="center"><em>Fig - git reset specific file</em></p>
 
-Now for our project let's add all file to stage area.
+Now for our project let's add all file to staging area.
 
 ![all files to stage area](snapshot/11.PNG)
 <p align="center"><em>Fig - all files to stage area</em></p>
 
 ### Commit Changes
 
-To commit changes that we have made in our project first we have to add all our files that we want to commit in staging area with ```git add``` command. You can see the new changes you have made in your files using 
+To commit changes that we have made in our project first we have to add all our files that we want to commit in staging area with ```git add``` command. We can see the new changes we have made in our files using 
 ```bash
 $   git diff
 ``` 
@@ -160,7 +158,7 @@ After adding files in staging area now we can make changes to our repository by 
 $   git commit -m "your massage"
 ```
 
-![remote url of new repository](snapshot/14.PNG)
+![git commit](snapshot/14.PNG)
 <p align="center"><em>Fig - commit changes</em></p>
 
 We can also see all our commits using the following command. It will list all our commits we made in our repository till now.
@@ -171,7 +169,7 @@ $   git log
 ![git log](snapshot/13.PNG)
 <p align="center"><em>Fig - git log</em></p>
 
-## Add Local Repository To Remote Repository
+## Transfer Local Repository To Remote Repository
 
 - Browse [Github](https://github.com) to create a new repository.
 
@@ -247,16 +245,16 @@ Here origin is your repository and master is the branch where you are pushing th
 
 As I mentioned in previous section that it's okay but not best practice to directly commit and push changes to master branch. A common workflow which most of the developer suggest is ,
 
-* Create a branch for your desire feature in which you want to implement. 
+* Create a branch for your desire feature you want to implement. 
 * And then work on that branch i.e. Commit , Push , Pull etc.
-* After sucessfully implement the features on that branch merge the branch with master branch.
+* After sucessfully implement the features merge the branch with master branch.
 * Remove the branch.
 
 Now this help to unit test individual feature of a project before merging them to master branch.
 
 ### Create a new branch
 
-To list all the branch in your local and remote repository just simply type 
+To list all the branch in our local and remote repository 
 ```bash
 $   git branch -a
 ```
@@ -271,7 +269,7 @@ Now lets see current status of our remote repository in the figure below
 
 ![git push change](snapshot/31.PNG)
 
-As you can see currently we have only one remote branch which is master branch. And the repository contains one folder and two files. Now lets create a new branch for our further activities. To create a new branch we can simply type the following command in our git bash.
+As you can see currently we have only one remote branch which is master branch. And the repository contains one folder and two files. Now lets create a new branch for our further activities. To create a new branch we need to type the following command in our git bash.
 ```bash
 $   git branch <branch name>
 ```
@@ -280,7 +278,7 @@ Now if we list our all branches using `git branch -a` we will see a new branch i
 ![git branch create](snapshot/29.PNG)
 ![git branch list](snapshot/28.PNG)
 
-To head to a new branch simply type the folowing command
+To head to a new branch we need to type
 
 ```bash
 $   git checkout <branch name>
@@ -296,11 +294,13 @@ Now let's create a new text file named test and commit it in our newly created b
 
 ### Push Branch
 
-To push our new branch to remote repository type
+To push our new branch to remote repository we need to type
 
 ```bash
 $   git push -u origin <branch name>
 ```
+
+[N.B. -u is important if the branch is not present in remote repository. If the branch is already present in remote repository we can simply use `git push` ]
 
 ![git push new branch](snapshot/33.PNG)
 
@@ -316,7 +316,7 @@ To merge a branch we need to follow some steps ,
 ```bash
 $   git checkout master
 ```
-* Pull the changes other developers made.
+* Pull the changes other developers have made.
 ```bash
 $   git pull origin master
 ```
@@ -329,13 +329,13 @@ $   git branch --merged
 ```
 
 ![git checkout master](snapshot/35.PNG)
-* Merge branch with master
+* Merge our branch with master
 ```bash
 $   git marge <branch name>
 ```
 ![git checkout master](snapshot/38.PNG)
 
-* Push the changes in marged branch to master.
+* Push the changes to master.
 ```bash
 $   git push origin master
 ```
@@ -357,7 +357,7 @@ Now as we have marged our test branch with master branch we can now delete our b
 ```bash
 $   git branch -d <branch name>
 ```
-* Delete the branch from remote repository
+* Delete the branch from remote repository also
 ```bash
 $   git push origin --delete <branch name>
 ```

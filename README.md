@@ -27,11 +27,11 @@ Now once you have sucessfully installed git now you need to set up some global c
 git config --global user.name "<your name>" 
 ```
 - To set your email
-```
+```bash
 git config --global user.email "<your email>" 
 ```
 - To list all your configuration
-```
+```bash
 git config --list
 ```
 
@@ -46,12 +46,12 @@ Snapshots are given below
 ### Need Help?
 
 If you need help regading any keyword you can try any of these two command
-```
+```bash
 git help <keyword>
 ```
 <p align="center">or</p>
 
-```
+```bash
 git <keyword> --help
 ```
 
@@ -72,7 +72,7 @@ Let's say we have a project or we have a directory for project which we want to 
 <p align="center"><em>Fig - empty project folder</em></p>
 
 Now to track this folder with git in our git bash we need to type the following command 
-```
+```bash
 git init
 ```
 This command will create a .git folder in your current working directory which stores all information about your project.
@@ -86,7 +86,7 @@ To stop tracking your project with git just remove the .git folder from project 
 <p align="center"><em>Fig - removing .git folder</em></p>
 
 [ Optional ] If you need to initialize your local repository with README or gitignore file you can do this with following command.
-```
+```bash
 touch README.md
 touch .gitignore
 ```
@@ -100,7 +100,7 @@ Before dive deeper into things there are basically three area. The first area is
 
 Now this all status can be checked using the following command in our git bash
 
-```
+```bash
 git status
 ```
 
@@ -112,7 +112,7 @@ Now in our project if we now run this command we will see this
 ### Add files to staging area
 
 Now this red color file are untracked file or the file we have made changes in our working directory. To add this file to staging area we need to type the following command 
-```
+```bash
 git add -A
 ```
 This command will add all the current untracked files in staging area. In Fig the file colored in green is currently in staging area and ready to be commited. 
@@ -122,7 +122,7 @@ This command will add all the current untracked files in staging area. In Fig th
 
 To remove all file from staging area we can simply type 
 
-```
+```bash
 git reset
 ```
 
@@ -131,14 +131,14 @@ This will remove all file from from staging area.
 <p align="center"><em>Fig - remove all files from stage area</em></p>
 
 To add a sepcific file we can type 
-```
+```bash
 git add <filename>
 ```
 ![git add specific file to stage area](snapshot/9.PNG)
 <p align="center"><em>Fig - add specific file to stage area</em></p> 
 
 To remove a specific file from stage area 
-```
+```bash
 git reset <filename>
 ```
 ![git reset filename](snapshot/12.PNG)
@@ -151,12 +151,12 @@ Now for our project let's add all file to stage area.
 
 ### Commit Changes
 
-To commit changes that we have made in our project first we have to add all our files that we want to commit in staging area with `git add` command. You can see the new changes you have made in your files using 
-```
+To commit changes that we have made in our project first we have to add all our files that we want to commit in staging area with ```git add``` command. You can see the new changes you have made in your files using 
+```bash
 git diff
 ``` 
 After adding files in staging area now we can make changes to our repository by typing the following command in our git bash.
-```
+```bash
 git commit -m "your massage"
 ```
 
@@ -164,7 +164,7 @@ git commit -m "your massage"
 <p align="center"><em>Fig - commit changes</em></p>
 
 We can also see all our commits using the following command. It will list all our commits we made in our repository till now.
-```
+```bash
 git log
 ```
 ![git log](snapshot/13_0.PNG)
@@ -187,7 +187,7 @@ git log
 - Change the current working directory to your project directory or local repository
 
 - Now run this following command to your git bash.
-```
+```bash
 git remote add origin < remote repository URL >
 git remote -v
 git push origin master
@@ -204,15 +204,15 @@ git push origin master
 
 To clone a remote repository first you need to go to the directory where you may want to clone your repository. After that just type the following command in your git bash.
 
-```
+```bash
 git clone <url of your remote repository>
 ```
 To list the information about the repository you have cloned you can try
-```
+```bash
 git remote -v
 ```
 To list out all branches your cloned repository have you can try
-```
+```bash
 git branch -a
 ```
 
@@ -227,7 +227,7 @@ To push changes we made in our local repository to remote repository we need to 
 <p align="center"><em>Fig - commit change</em></p>
 
 - Pull the changes other developers have made so far. Now this is important when two or more developer is working on a project so that before making any changes to remote repository from your side you are updated with what changes other developers have made till now. Pulling the changes can be done with the follwing command
-```
+```bash
 git pull origin master
 ```
 
@@ -235,7 +235,7 @@ git pull origin master
 <p align="center"><em>Fig - pull changes to master branch</em></p>
 
 - Now push your changes using following command. Pushing is important so that other developer may fetch what changes are made from your side.
-```
+```bash
 git push origin master
 ```
 

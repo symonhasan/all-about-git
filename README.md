@@ -241,5 +241,18 @@ $   git push origin master
 
 ![git push change](snapshot/25.PNG)
 <p align="center"><em>Fig - push changes in master branch</em></p>
-Here `origin` is your repository and `master` is the branch where you are pushing the changes. Though it's not best practice to direcly push changes to master branch.
+Here origin is your repository and master is the branch where you are pushing the changes. Though it's not best practice to direcly push changes to master branch.
+
+## Work with Branch
+
+As I mentioned in previous section that it's okay but not best practice to directly commit and push changes to master branch. A common workflow which most of the developer suggest is ,
+
+* Create a branch for your desire feature in which you want to implement. 
+* And then work on that branch i.e. Commit , Push , Pull etc.
+* After sucessfully implement the features on that branch merge the branch with master branch.
+* Remove the branch.
+
+Now this help to unit test individual feature of a project before merging them to master branch.
+
+### Create New Branch
 

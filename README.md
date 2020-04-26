@@ -11,7 +11,7 @@ Git can be simply installed from [Git-Scm](https://git-scm.com/downloads) for an
 ### Git Version Check
 
 After sucessfully installing Git to your machine you can now check version by typing the following command in your Terminal or Git Bash
-```
+```sh
 git --version
 ```
 You may now see your installed Git version.

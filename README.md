@@ -6,11 +6,26 @@
     <h2 align="center">Table Of Content</h2>
 </p>
 
--   [Getting Started](#getting-started)
+- [Getting Started](#getting-started)
     - [Git Installation](#git-installation)
     - [Git Version Check](#git-version-check)
     - [Git Global Config](#git-global-config)
-        
+    - [Need Help?](#need-help)
+- [Setting Up Local Repository](#setting-up-local-repository)
+    - [Initialize](#initialize)
+    - [Checking Git Status](#checking-git-status)
+    - [Add Files To Staging Area](#add-files-to-staging-area)
+    - [Commit Changes](#commit-changes)
+- [Transfer Local Repository To Remote Repository](#transfer-local-repository-to-remote-repository) 
+- [Clone Remote Repository](#clone-remote-repository)
+- [Push Changes](#push-changes)
+- [Work With New Branch](#work-with-new-branch)
+    - [Create A New Branch](#create-a-new-branch)
+    - [Commit To New Branch](#commit-to-new-branch)
+    - [Push To A Branch](#push-to-a-branch)
+    - [Marge A Branch](#marge-a-branch)
+    - [Delete A Branch](#delete-a-branch)
+
 
 ## Getting Started
 

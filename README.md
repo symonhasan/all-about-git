@@ -1,4 +1,10 @@
-# All About Git
+<p align="center">
+  <img src="snapshot/git_logo.png" />
+</p>
+
+<h1 align="center">
+    All About GIT
+</h1>
 
 ## Getting Started
 
@@ -241,7 +247,7 @@ $   git push origin master
 <p align="center"><em>Fig - push changes in master branch</em></p>
 Here origin is your repository and master is the branch where you are pushing the changes. Though it's not best practice to direcly push changes to master branch.
 
-## Work with Branch
+## Work with new branch
 
 As I mentioned in previous section that it's okay but not best practice to directly commit and push changes to master branch. A common workflow which most of the developer suggest is ,
 
@@ -292,7 +298,7 @@ Now let's create a new text file named test and commit it in our newly created b
 
 ![git create file](snapshot/32.PNG)
 
-### Push Branch
+### Push to a Branch
 
 To push our new branch to remote repository we need to type
 

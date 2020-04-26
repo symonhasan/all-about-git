@@ -35,10 +35,11 @@ git config --global user.email "<your email>"
 git config --list
 ```
 
-** Snapshots are given below **
+Snapshots are given below
 
 ![git global config](snapshot/2.PNG)
 <p align="center"><em>Fig 2 - setting config variable</em></p>
+
 ![git global config list](snapshot/3.PNG)
 <p align="center"><em>Fig 3 - outcome of git config --list command</em></p>
 
@@ -54,7 +55,7 @@ git help <keyword>
 git <keyword> --help
 ```
 
-** Snapshots **
+ Snapshots 
 ![git fetching help](snapshot/2_0.PNG)
 <p align="center"><em>Fig 4 - fetching help for config keyword</em></p>
 

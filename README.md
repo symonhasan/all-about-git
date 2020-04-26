@@ -1,10 +1,16 @@
 <p align="center">
-  <img src="snapshot/git_logo.png" />
+  <img src="snapshot/git_logo.png" height="100px" />
 </p>
 
-<h1 align="center">
-    All About GIT
-</h1>
+<p align="center">
+    <h2 align="center">Table Of Content</h2>
+</p>
+
+-   [Getting Started](#getting-started)
+    - [Git Installation](#git-installation)
+    - [Git Version Check](#git-version-check)
+    - [Git Global Config](#git-global-config)
+        
 
 ## Getting Started
 

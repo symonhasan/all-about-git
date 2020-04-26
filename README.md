@@ -12,7 +12,7 @@ Git can be simply installed from [Git-Scm](https://git-scm.com/downloads) for an
 
 After sucessfully installing Git to your machine you can now check version by typing the following command in your Terminal or Git Bash
 ```bash
-git --version
+$ git --version
 ```
 You may now see your installed Git version.
 ![git version check](snapshot/0.PNG)
@@ -24,7 +24,7 @@ Now once you have sucessfully installed git now you need to set up some global c
 
 - To set your username
 ```bash
-git config --global user.name "<your name>" 
+$ git config --global user.name "<your name>" 
 ```
 - To set your email
 ```bash

@@ -361,7 +361,7 @@ $   git branch --merged
 ![git checkout master](snapshot/35.PNG)
 * Merge our branch with master
 ```bash
-$   git marge <branch name>
+$   git merge <branch name>
 ```
 ![git checkout master](snapshot/38.PNG)
 
